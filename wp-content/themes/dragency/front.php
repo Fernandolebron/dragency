@@ -1,7 +1,9 @@
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+
+
+<html <?php language_attributes(); ?>>
+  <head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,19 +14,22 @@
 
     <title>Blog Template for Bootstrap</title>
 
+    
+
+    <!-- font-awesome core CSS -->
+    <link href="<?php bloginfo ('template_url');?> /fontawesome/css/font-awesome.css" rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Font Awsome--> 
-    <link  href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?php bloginfo ('template_url');?> /css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
 
   </head>
 
   <body>
 
-    <div class="blog-masthead">
+   <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item active" href="#">Home</a>
@@ -76,12 +81,7 @@
        </div> <!-- Row --> 
 
      </div>
-<div class="list-group">
-  <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
-  <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
-  <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
-  <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
-</div>
+
    </section>
 
     <footer class="blog-footer">
