@@ -34,10 +34,13 @@
 
   <body>
    <div class="blog-masthead">
-      <div class="container">
-      <section class ="logo">
-       
-      </section>
+      <div class="container-fluid">
+      <header>
+      <!--<section class ="logo"> 
+        <img src="images/logo.png" alt="logo">-->
+      
+      <a href="index.html"><img src="<?php bloginfo ('template_url');?> /logo/logo.png" alt="logo"></a>
+      <!--</section>-->
         <nav class="blog-nav">
   <!--Nav bar -->
 
@@ -55,12 +58,18 @@
             );
         ?>
 
-        
+       
         </nav><!-- end of nav --> 
+        <div class="redes">
+      <a href="https://www.facebook.com/DR-Agency-378840682451043/?fref=ts" class="redes"><img src="<?php bloginfo ('template_url');?> /sociales/facebook.png" alt="facebook" height =60px ></a>
+      <a href="https://www.instagram.com/dragencyrd/" class="redes"><img src="<?php bloginfo ('template_url');?> /sociales/instagram.png" alt="instagram"  height =60px></a>
+      <a href="https://www.youtube.com/channel/UCS4DdOxFeyRA2NWclF-Ol7g" class="redes"><img src="<?php bloginfo ('template_url');?> /sociales/youtube.png" alt="youtube"  height =60px></a>
+     </div>
+        </header>
       </div>
     </div>
-
-
+     
+    
     <section class="showcase">
      <div class="container">
         <h1>Custom Bootstrap Wordpress Theme</h1>

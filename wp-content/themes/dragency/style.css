@@ -173,7 +173,7 @@ h6, .h6 {
   color: #fff;
   text-align: center;
   font-size: 16px;
-  background-color: #76d000;
+  background-color: #040404;
   border-top: 1px solid #e5e5e5;
 }
 .blog-footer p:last-child {
@@ -187,22 +187,22 @@ Custom Styles
   padding: 100px 20px; 
   text-align: center;
   border-bottom: #ccc 1px solid; 
-  margin-bottom: 30px; 
+  margin-bottom: 10px; 
   color: #fff; 
-  background:url('images/eje1.jpg') no-repeat center center; 
+  background:url('banners/eje1.jpg') no-repeat center center; 
   background-size: 100% 750px;
 }
 
 .showcase h1{
 
   font-size:  55px; 
-  padding-bottom: 20px; 
+  padding-bottom: 10px; 
   color: #fff
 }
 
 .showcase p {
   font-size: 20px; 
-  margin-bottom: 50px; 
+  margin-bottom: 40px; 
   font
 }
 
@@ -218,6 +218,7 @@ Custom Styles
   margin-bottom: 10px; 
   color: #76d000;
 
+
 }
 
 .box{
@@ -232,7 +233,7 @@ div .drones{
   border-bottom: #ccc 1px solid; 
   margin-bottom: 30px; 
   color: #fff; 
-  content: url('images/eje1.jpg') no-repeat center center; 
+  content: url('banners/eje1.jpg') no-repeat center center; 
   background-size: 100% 750px;
 
 
@@ -248,25 +249,30 @@ div .drones{
   background-color: #fff; 
 
 }
-.navbar-nav {
-    float: right;
-    margin: 0;
-    position: relative; 
-    background: url("images/logo.png");
-    background-size: 120px 110px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: left;
-     
-}
-.logo{
-  
-  background: url("images/logo.png");
-    background-size: 120px 110px;
-    background-repeat: no-repeat;
-    padding-top: 80px;
-   
-   }
+
+header img,header nav  {
+    display:inline-block;
+    vertical-align:middle;
+
+ }
+
+
+header img {
+    float:left;
+    
+
+ }
+header nav {
+    float:center;
+    margin-top:76px;
+ }
+
+ .redes {
+ float: right;
+ margin-top: 33px; 
+ margin-right: 10px;
+
+ }
 
 
 }
