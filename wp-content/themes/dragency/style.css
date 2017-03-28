@@ -17,6 +17,8 @@ Text Domain: softdevrd
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #555;
+  
+
 }
 
 h1, .h1,
@@ -168,9 +170,10 @@ h6, .h6 {
 
 .blog-footer {
   padding: 40px 0;
-  color: #999;
+  color: #fff;
   text-align: center;
-  background-color: #f9f9f9;
+  font-size: 16px;
+  background-color: #76d000;
   border-top: 1px solid #e5e5e5;
 }
 .blog-footer p:last-child {
@@ -234,5 +237,36 @@ div .drones{
 
 
 }
+/* section to change navbar menus colors */
+.blog-nav a{
+  color: #76d000; 
+  font-size: 18px; 
+
+}
+/* section to change navbar background scolors */
+.blog-masthead{
+  background-color: #fff; 
+
+}
+.navbar-nav {
+    float: right;
+    margin: 0;
+    position: relative; 
+    background: url("images/logo.png");
+    background-size: 120px 110px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+     
+}
+.logo{
+  
+  background: url("images/logo.png");
+    background-size: 120px 110px;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+   
+   }
+
 
 }
