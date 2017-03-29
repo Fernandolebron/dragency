@@ -33,18 +33,26 @@
   </head>
 
   <body>
-   <div class="blog-masthead">
-      <div class="container-fluid">
-      <header>
-      <!--<section class ="logo"> 
-        <img src="images/logo.png" alt="logo">-->
-      
-      <a href="index.html"><img src="<?php bloginfo ('template_url');?> /logo/logo.png" alt="logo"></a>
-      <!--</section>-->
-        <nav class="blog-nav">
-  <!--Nav bar -->
+   
+    <!--<h1 class="text-center">Example 3 - Increase entire navbar height</h1>-->
 
-           <?php
+
+<div class="example3">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.php"><img src="<?php bloginfo ('template_url');?> /logo/logo.png">
+        </a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+        <?php
             wp_nav_menu( array(
                 'menu'              => 'primary',
                 'theme_location'    => 'primary',
@@ -57,18 +65,18 @@
                 'walker'            => new WP_Bootstrap_Navwalker())
             );
         ?>
-
-       
-        </nav><!-- end of nav --> 
-        <div class="redes">
-      <a href="https://www.facebook.com/DR-Agency-378840682451043/?fref=ts" class="redes"><img src="<?php bloginfo ('template_url');?> /sociales/facebook.png" alt="facebook" height =60px ></a>
-      <a href="https://www.instagram.com/dragencyrd/" class="redes"><img src="<?php bloginfo ('template_url');?> /sociales/instagram.png" alt="instagram"  height =60px></a>
-      <a href="https://www.youtube.com/channel/UCS4DdOxFeyRA2NWclF-Ol7g" class="redes"><img src="<?php bloginfo ('template_url');?> /sociales/youtube.png" alt="youtube"  height =60px></a>
-     </div>
-        </header>
+            </ul>
+          </li>
+        </ul>
       </div>
+      <!--/.nav-collapse -->
     </div>
-     
+    <!--/.container-fluid -->
+  </nav>
+</div>
+
+
+ 
     
     <section class="showcase">
      <div class="container">
