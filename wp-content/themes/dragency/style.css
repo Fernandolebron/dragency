@@ -276,28 +276,27 @@ header nav {
 
 */
 
-.example3 .navbar{ 
+ .navbar{ 
     background-color: #fff;
 }
-.example3 .navbar-brand {
+ .navbar-brand {
   height: 120px;
 
 }
 
-.example3 .navbar-brand >img {
+ .navbar-brand >img {
   margin-top: -40px;
-}
-.example3 .nav >li >a {
+ .nav >li >a {
   padding-top: 70px;
   padding-bottom: 30px;
   font-size: 18px;
   color: #76d000;
 }
-.example3 .nav >li >a:hover{
+.nav >li >a:hover{
   background-color: #000;
   color: #76d000;
 }
-.example3 .navbar-toggle {
+.navbar-toggle {
   padding: 10px;
   margin: 25px 15px 25px 0;
   background-color: #000;
@@ -307,8 +306,7 @@ header nav {
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     background-color: #000;
 }
-
-.example3 .navbar-toggle {
+ .navbar-toggle {
     padding: 10px;
     margin: 25px 15px 25px 0;
 }
@@ -316,6 +314,10 @@ header nav {
 
 .navbar-inverse .navbar-toggle {
     border-color: #000;
+}
+
+#websocial{
+  padding-top: -20px;  
 }
 
 }

@@ -37,47 +37,52 @@
     <!--<h1 class="text-center">Example 3 - Increase entire navbar height</h1>-->
 
 
-<div class="example3">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.php"><img src="<?php bloginfo ('template_url');?> /logo/logo.png">
-        </a>
-      </div>
-      <div id="navbar3" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-        <?php
-            wp_nav_menu( array(
-                'menu'              => 'primary',
-                'theme_location'    => 'primary',
-                'depth'             => 2,
-                'container'         => 'div',
-                'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'bs-example-navbar-collapse-1',
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'            => new WP_Bootstrap_Navwalker())
-            );
-        ?>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-    <!--/.container-fluid -->
-  </nav>
-</div>
+<!-- begin navigation !-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container-fluid "><!-- please put conainer or delimater OJO not terminated --> 
+         
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            
+           
+        </div>
+        <div id="navbar" class="collapse navbar-collapse  ">
+          
+              <div class="nav navbar-nav navbar-left">
+                   <!-- Adding Wordpress code for real pages --> 
+                   <?php
+                   wp_nav_menu( array(
+                       'menu'              => 'primary',
+                       'theme_location'    => 'primary',
+                       'depth'             => 2,
+                       'menu_class'        => 'nav navbar-nav')
+                       
+                   );
+               ?>
+                
+          </div>
+            <div class="nav navbar-nav navbar-right social hidden-sm hidden-md hidden-xs">
+                 <a href=""> <img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/facebook.png"  width= "60px"></a>
 
+                 <a href=""><img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/instagram.png"  width= "60px"></a>
 
- 
-    
+                 <a href=""><img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/youtube.png" width= "60px"></a>
+                 </*?php get_search_form();?*/-->
+                
+
+               </div>
+              
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav>
+  
+  
     <section class="showcase">
      <div class="container">
         <h1>Custom Bootstrap Wordpress Theme</h1>
