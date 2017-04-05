@@ -33,7 +33,7 @@
   </head>
 
   <body>
-   
+    
     <!--<h1 class="text-center">Example 3 - Increase entire navbar height</h1>-->
 
 
@@ -49,7 +49,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            
+            <a href=""> <img class="" src="<?php echo get_template_directory_uri(); ?>/logo/logo.png"  width= "150px"></a>
            
         </div>
         <div id="navbar" class="collapse navbar-collapse  ">

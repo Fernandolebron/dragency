@@ -15,8 +15,9 @@ Text Domain: softdevrd
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Open sans';
   color: #555;
+  font-size: 15px;
   
 
 }
@@ -28,7 +29,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open sans'
   font-weight: normal;
   color: #333;
 }
@@ -240,84 +241,70 @@ div .drones{
 
 }
 
-/* section to change navbar menus colors 
-.blog-nav a{
-  color: #76d000; 
-  font-size: 18px; 
-
-}
-/* section to change navbar background scolors 
-.blog-masthead{
-  background-color: #fff; 
-
-}
-
-header img,header nav  {
-    display:inline-block;
-    vertical-align:middle;
-
- }
-
-
-header img {
-    float:left;
-    
-
- }
-header nav {
-    float:center;
-   
- }
-
- .redes {
- float: right;
- padding-top: 33px;
- }
-
-*/
-
  .navbar{ 
     background-color: #fff;
+    margin-top: -10px;
 }
- .navbar-brand {
-  height: 120px;
+/*Lineas de Cuadro Mobile*/
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #76d000;
+}
 
-}
-
- .navbar-brand >img {
-  margin-top: -40px;
- .nav >li >a {
-  padding-top: 70px;
-  padding-bottom: 30px;
-  font-size: 18px;
-  color: #76d000;
-}
-.nav >li >a:hover{
-  background-color: #000;
-  color: #76d000;
-}
 .navbar-toggle {
-  padding: 10px;
-  margin: 25px 15px 25px 0;
-  background-color: #000;
-
-}
-
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 45px;
+    margin-right: 15px;
+    margin-bottom: 8px;
     background-color: #000;
-}
- .navbar-toggle {
-    padding: 10px;
-    margin: 25px 15px 25px 0;
-}
-
-
-.navbar-inverse .navbar-toggle {
-    border-color: #000;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
-#websocial{
-  padding-top: -20px;  
+.nav .navbar-nav{
+  margin-top: 40px;
+} 
+
+.navbar-inverse .navbar-nav > a > img{
+  margin-top: 35px;
+} 
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #76d000;
+
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    Background-color: #000;
+
+}
+
+/*Code for image and videos */ 
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.entry-content img, 
+.entry-content iframe, 
+.entry-content object, 
+.entry-content embed {
+        max-width: 100%;
 }
 
 }

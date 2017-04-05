@@ -36,4 +36,21 @@
 
    </section>
 
+   <section>
+     <div>
+        <h1>Nuestros Proyectos</h1>
+
+
+     </div>
+
+   </section>
+
+   <section>
+     <div>
+        <h1>Nuestros Clientes</h1>
+
+     </div>
+
+   </section>
+
 <?php get_footer();?>
