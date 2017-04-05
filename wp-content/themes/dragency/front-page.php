@@ -164,8 +164,7 @@ if (have_posts()):
               </div>
                     
           </div><!-- item active -->
-</div><!--.item-->         
-     
+</div><!--.item-->     
   
 
 <?php get_footer();?>

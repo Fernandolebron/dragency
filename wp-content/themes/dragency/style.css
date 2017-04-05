@@ -21,7 +21,11 @@ body {
   
 
 }
-
+p{
+  font-family: 'Open sans';
+  color:;
+  font-size: 20px;
+}
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -183,35 +187,12 @@ h6, .h6 {
 /*
 Custom Styles 
 */
-.showcase{
-  height: 750px; 
-  padding: 100px 20px; 
-  text-align: center;
-  border-bottom: #ccc 1px solid; 
-  margin-bottom: 10px;
-  margin-top: 115px; 
-  color: #fff; 
-  background:url('banners/eje1.jpg') no-repeat center center; 
-  background-size: 100% 750px;
-}
 
-.showcase h1{
-
-  font-size:  55px; 
-  padding-bottom: 10px; 
-  color: #fff
-}
-
-.showcase p {
-  font-size: 20px; 
-  margin-bottom: 40px; 
-  font
-}
 
 .boxes{
   text-align: center;
   background: #fff;
-  margin-bottom: 30px; 
+  margin-top: 100px; 
 
 }
 
@@ -227,7 +208,7 @@ Custom Styles
   padding: 15px; 
   /*border: #000000 1px solid; */
 }
-2
+
 div .drones{
    
    
@@ -243,8 +224,10 @@ div .drones{
 
  .navbar{ 
     background-color: #fff;
-    margin-top: -10px;
-}
+    margin-top: -15px;
+    height: 115px;
+    }
+
 /*Lineas de Cuadro Mobile*/
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #76d000;
@@ -262,9 +245,12 @@ div .drones{
     border: 1px solid transparent;
     border-radius: 4px;
 }
-
+.showcase img{
+  width: 100%;
+}
 .nav .navbar-nav{
   margin-top: 40px;
+  
 } 
 
 .navbar-inverse .navbar-nav > a > img{
@@ -273,15 +259,97 @@ div .drones{
 
 .navbar-inverse .navbar-nav > li > a {
     color: #76d000;
+    font-family: 'Open sans';
+    font-size: 20px;
 
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    Background-color: #000;
+    background-color: #000;
 
 }
 
-/*Code for image and videos */ 
+
+.menutwo{
+  text-align: center;
+  margin-top: -60px;
+}
+
+
+
+.menuthree{
+text-align: center;
+  margin-top: 0px;
+}
+
+
+
+.nav .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #000;
+
+}
+
+
+   /*Style for video and image */
+.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.video-container iframe, .video-container object, .video-container embed, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }    
+    
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.img-circle {
+  border-radius: 50%;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
+
 
 .video-container {
   position: relative;
@@ -307,4 +375,56 @@ div .drones{
         max-width: 100%;
 }
 
+/*corousel clientes*/
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
 }
+/* The controlsy */
+.carousel-control {
+  left: -12px;
+    height: 40px;
+  width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right {
+  right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: -10px;
+  margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+  background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+
+/*Ower Projects*/
+
+#myCarousel .nav a small
+{
+    display: block;
+}
+#myCarousel .nav
+{
+    background: #eee;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+.nav-pills>li[data-slide-to="0"].active a { background-color: #16a085; }
+.nav-pills>li[data-slide-to="1"].active a { background-color: #e67e22; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #2980b9; }
+.nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad; }
+
+

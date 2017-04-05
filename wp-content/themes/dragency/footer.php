@@ -1,3 +1,4 @@
+  </div>
   <footer class="blog-footer">
    
       <!--</section>-->
@@ -12,9 +13,18 @@
     <?php wp_footer();?>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     
-    <script src="<?php echo get_template_directory_uri(); ?> /js/bootstrap.js"></script>
-    <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/jquery/jquery.min.js"><\/script>')</script>
-    <script src="<?php echo get_template_directory_uri(); ?>/jquery/jquery-3.1.1.js"></script>
-     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+    
+     
+
+     <!-- jQuery -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/scrolling-nav.js"></script>
+       <script src="<?php echo get_template_directory_uri(); ?>/js/functionsjs.js"></script>
   </body>
 </html>
