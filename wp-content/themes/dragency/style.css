@@ -14,6 +14,18 @@ Text Domain: softdevrd
  * Globals
  */
 
+ /*banner home page*/
+.banner{
+ 
+   margin-top: 100px;
+
+
+ /*end of banner home page */
+}
+
+.multiclass{
+  margin-top: 100px;
+}
 body {
   font-family: 'Open sans';
   color: #555;

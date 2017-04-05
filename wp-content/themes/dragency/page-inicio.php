@@ -1,6 +1,33 @@
 <?php
 get_header();?>
+<div class="container-fluid banner">
 
+   <div>
+        <!-- Wrapper for slides -->
+         <?php
+      if (have_posts()):
+        while (have_posts()) : the_post(); ?>
+
+        <div class="carousel-inner">
+            <div class="item active">
+              <?php query_posts(array(
+                  'category_name'  => 'banner',
+                  'posts_per_page' => 1
+                )); while (have_posts()) : the_post(); ?>
+               <a href="#"><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-image'); ?></a>
+               
+                <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+            </div>
+
+</div>
    <section class="boxes">
      <div class="container fluid">
        <div class="row">

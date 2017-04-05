@@ -73,11 +73,11 @@
                 
           </div>
             <div class="nav navbar-nav navbar-right social hidden-sm hidden-md hidden-xs">
-                 <a href=""> <img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/facebook.png"  width= "60px"></a>
+                 <a href="https://www.facebook.com/DR-Agency-378840682451043/?fref=ts"> <img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/facebook.png"  width= "60px"></a>
 
-                 <a href=""><img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/instagram.png"  width= "60px"></a>
+                 <a href="https://www.instagram.com/dragencyrd/"><img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/instagram.png"  width= "60px"></a>
 
-                 <a href=""><img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/youtube.png" width= "60px"></a>
+                 <a href="https://www.youtube.com/channel/UCS4DdOxFeyRA2NWclF-Ol7g"><img class="" src="<?php echo get_template_directory_uri(); ?>/sociales/youtube.png" width= "60px"></a>
                  </*?php get_search_form();?*/-->
                 
 
