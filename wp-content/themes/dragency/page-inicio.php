@@ -1,75 +1,111 @@
 <?php
 get_header();?>
 
-   
- <section class="  slide-wrapper">
-        <div class="multiclass container-fluid">
-            <div id="myCarousel" class="carousel slide">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                 </ol>
+ <div class="carousel fade-carousel slide col-md-12" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item item1 active">
-                        <div class="fill" style=" background-color:#48c3af;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item item1 active">
+                        <div class="fill" style=" background-color:#7fb537;">
                             <div class="inner-content">
                                 <div class="carousel-img">
-                                    <img src="http://vocefalandoingles.com/wp-content/uploads/2016/09/sofa.png" alt="sofa" class="img img-responsive" />
+                                    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                    <?php query_posts(array(
+                                        'category_name'  => 'banner1',
+                                        'posts_per_page' => 1
+                                      )); while (have_posts()) : the_post(); ?>
+                                     <a href="#" class="thumbnail "><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-full'); ?></a>
                                 </div>
-                                <div class="carousel-desc">
+                                <!--<div class="carousel-desc">
 
-                                    <h2>Modern Designer Sofa</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elit ipsum, scelerisque non semper eu, aliquet vel odio. Sed auctor id purus nec tristique. Donec euismod, urna vel dapibus tristique, dolor arcu ultrices lectus, nec pulvinar est turpis sit amet felis. Duis interdum purus quam, vitae cursus erat ornare at. Donec congue mi a ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta vulputate magna, id pretium lectus iaculis eu. Ut ut viverra libero.</p>
+                                    <h3><?php the_title(); ?></h3>
+                    <p><?php the_excerpt(); ?></p>-->
+                
+                <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
 
-                                </div>
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+
+                                <!--</div>-->
                             </div>
                         </div>
                     </div>
                     <div class="item item2">
-                        <div class="fill" style="background-color:#b33f4a;">
+                        <div class="fill" style="background-color:#7fb537;">
                             <div class="inner-content">
-                                <div class="carousel-img">
-                                    <img src="http://cdn.homedit.com/wp-content/uploads/2011/08/137CLUB2ST.png" alt="white-sofa" class="img img-responsive" />
+                                 <div class="carousel-img">
+                                    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                    <?php query_posts(array(
+                                        'category_name'  => 'banner1',
+                                        'posts_per_page' => 1
+                                      )); while (have_posts()) : the_post(); ?>
+                                     <a href="#" class="thumbnail"><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-full'); ?></a>
                                 </div>
-                                <div class="carousel-desc">
+                                <!--<div class="carousel-desc">
 
-                                    <h2>Vintage Style Sofa</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elit ipsum, scelerisque non semper eu, aliquet vel odio. Sed auctor id purus nec tristique. Donec euismod, urna vel dapibus tristique, dolor arcu ultrices lectus, nec pulvinar est turpis sit amet felis. Duis interdum purus quam, vitae cursus erat ornare at. Donec congue mi a ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta vulputate magna, id pretium lectus iaculis eu. Ut ut viverra libero.</p>
+                                    <h3><?php the_title(); ?></h3>
+                    <p><?php the_excerpt(); ?></p>-->
+                
+                <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
 
-                                </div>
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+
+                                <!--</div>-->
                             </div>
                         </div>
                     </div>
                     <div class="item item3">
-                        <div class="fill" style="background-color:#7fc2f4;">
+                        <div class="fill" style="background-color:#7fb537;">
                             <div class="inner-content">
-                                <div class="col-md-6">
-
-                                    <div class="carousel-img">
-                                        <img src="http://vocefalandoingles.com/wp-content/uploads/2016/09/sofa.png" alt="sofa" class="img img-responsive" />
-                                    </div>
+                                 <div class="carousel-img">
+                                    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                                    <?php query_posts(array(
+                                        'category_name'  => 'banner1',
+                                        'posts_per_page' => 1
+                                      )); while (have_posts()) : the_post(); ?>
+                                     <a href="#" class="thumbnail"><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-full'); ?></a>
                                 </div>
+                                <!--<div class="carousel-desc">
 
-                                <div class="col-md-6 text-left">
-                                    <div class="carousel-desc">
+                                    <h3><?php the_title(); ?></h3>
+                    <p><?php the_excerpt(); ?></p>-->
+                
+                <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
 
-                                        <h2>Stylish Sofa</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elit ipsum, scelerisque non semper eu, aliquet vel odio. Sed auctor id purus nec tristique. Donec euismod, urna vel dapibus tristique, dolor arcu ultrices lectus, nec pulvinar est turpis sit amet felis. Duis interdum purus quam, vitae cursus erat ornare at. Donec congue mi a ipsum tincidunt, imperdiet vehicula odio rutrum. Nam porta vulputate magna, id pretium lectus iaculis eu. Ut ut viverra libero.</p>
+                  <?php endwhile; 
 
-                                    </div>
-                                </div>
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+
+                                <!--</div>-->
                             </div>
                         </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
+  </div> 
+</div>
        
 
 <!-- Servicios part --> 
@@ -174,29 +210,130 @@ get_header();?>
 
    </section>
 <!--End of Servicios part --> 
-<hr>
-   
-<div class="container-fluid menuthree">
-    <h1 >Nuestros Proyectos</h1>
-    <p></p>
-    
-     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-         <?php
-      if (have_posts()):
-        while (have_posts()) : the_post(); ?>
 
-        <div class="carousel-inner">
-            <div class="item active">
+<!-- Nuestros proyectos --> 
+<br>
+          <br>
+<div class="menuthree">
+    <h1 >Nuestros proyectos</h1>
+    <p></p>
+<div class="container">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      
+        <div class="item active">
+         <?php
+                  if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
               <?php query_posts(array(
                   'category_name'  => 'proyectos1',
                   'posts_per_page' => 1
                 )); while (have_posts()) : the_post(); ?>
                <a href="#"><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-image'); ?></a>
-                <div class="carousel">
-                    <h3><?php the_title(); ?></h3>
-                    <p><?php the_excerpt(); ?></p>
-                </div>
+           <div class="carousel-caption">
+              <h3><?php the_title(); ?></h3>
+              <p><?php the_excerpt(); ?></p>
+          </div>
+          <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+        </div><!-- End Item -->
+ 
+         <div class="item ">
+         <?php
+                  if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
+              <?php query_posts(array(
+                  'category_name'  => 'proyectos1',
+                  'posts_per_page' => 1
+                )); while (have_posts()) : the_post(); ?>
+               <a href="#"><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-image'); ?></a>
+           <div class="carousel-caption">
+              <h3><?php the_title(); ?></h3>
+              <p><?php the_excerpt(); ?></p>
+          </div>
+          <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+        </div><!-- End Item -->
+        
+        <div class="item ">
+         <?php
+                  if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
+              <?php query_posts(array(
+                  'category_name'  => 'proyectos3',
+                  'posts_per_page' => 1
+                )); while (have_posts()) : the_post(); ?>
+               <a href="#"><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-image'); ?></a>
+           <div class="carousel-caption">
+              <h3><?php the_title(); ?></h3>
+              <p><?php the_excerpt(); ?></p>
+          </div>
+          <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+        </div><!-- End Item -->
+        
+        <div class="item ">
+         <?php
+                  if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
+              <?php query_posts(array(
+                  'category_name'  => 'proyectos4',
+                  'posts_per_page' => 1
+                )); while (have_posts()) : the_post(); ?>
+               <a href="#"><img src="" alt="" style="max-width:100%;"><?php the_post_thumbnail('banner-image'); ?></a>
+           <div class="carousel-caption">
+              <h3><?php the_title(); ?></h3>
+              <p><?php the_excerpt(); ?></p>
+          </div>
+          <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?>
+        </div><!-- End Item -->
+
+
+      <ul class="nav nav-pills nav-justified">
+        
+
+            <li data-target="#myCarousel" data-slide-to="0" class="active">
+               <?php
+                 if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
+
+                <?php query_posts(array(
+                  'category_name'  => 'proyectos1',
+                  'posts_per_page' => 1
+                )); while (have_posts()) : the_post(); ?>
+                  <a href="#"><?php the_title(); ?><small><?php the_excerpt(); ?></small></a>
                 <?php endwhile; ?>
             
                   <?php wp_reset_query(); ?>
@@ -205,59 +342,19 @@ get_header();?>
 
                   else: 
                       echo '<p>No content found</p>';
-                  endif; ?>
-            </div>
-            <!-- End Item -->
-            <div class="item">
-                <img src="http://placehold.it/1200x400/e67e22/ffffff&text=Projects">
-                <div class="carousel">
-                    <h3>
-                        Headline</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                </div>
-            </div>
-            <!-- End Item -->
-            <div class="item">
-                <img src="http://placehold.it/1200x400/2980b9/ffffff&text=Portfolio">
-                <div class="carousel">
-                    <h3>
-                        Headline</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                </div>
-            </div>
-            <!-- End Item -->
-            <div class="item">
-                <img src="http://placehold.it/1200x400/8e44ad/ffffff&text=Services">
-                <div class="carousel">
-                    <h3>
-                        Headline</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
-                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-                </div>
-            </div>
-            <!-- End Item -->
-        </div>
-        <!-- End Carousel Inner -->
-        <ul class="nav nav-pills nav-justified">
-           <?php
-      if (have_posts()):
-        while (have_posts()) : the_post(); ?>
+                  endif; ?></li>
 
-      <?php query_posts(array(
+          <li data-target="#myCarousel" data-slide-to="1">
+            <?php
+                 if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
+
+                <?php query_posts(array(
                   'category_name'  => 'proyectos1',
                   'posts_per_page' => 1
                 )); while (have_posts()) : the_post(); ?>
-
-            <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#"><?php the_title(); ?><small><?php the_excerpt(); ?></small></a></li>
-                 <?php endwhile; ?>
+                  <a href="#"><?php the_title(); ?><small><?php the_excerpt(); ?></small></a>
+                <?php endwhile; ?>
             
                   <?php wp_reset_query(); ?>
 
@@ -265,19 +362,57 @@ get_header();?>
 
                   else: 
                       echo '<p>No content found</p>';
-                  endif; ?>
-            <li data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum
-                dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="2"><a href="#">Portfolio<small>Lorem ipsum
-                dolor sit</small></a></li>
-            <li data-target="#myCarousel" data-slide-to="3"><a href="#">Services<small>Lorem ipsum
-                dolor sit</small></a></li>
+                  endif; ?></li>
+          <li data-target="#myCarousel" data-slide-to="2">
+            <?php
+                 if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
+
+                <?php query_posts(array(
+                  'category_name'  => 'proyectos3',
+                  'posts_per_page' => 1
+                )); while (have_posts()) : the_post(); ?>
+                  <a href="#"><?php the_title(); ?><small><?php the_excerpt(); ?></small></a>
+                <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?></li>
+          <li data-target="#myCarousel" data-slide-to="3">
+            <?php
+                 if (have_posts()):
+                  while (have_posts()) : the_post(); ?>
+
+                <?php query_posts(array(
+                  'category_name'  => 'proyectos4',
+                  'posts_per_page' => 1
+                )); while (have_posts()) : the_post(); ?>
+                  <a href="#"><?php the_title(); ?><small><?php the_excerpt(); ?></small></a>
+                <?php endwhile; ?>
+            
+                  <?php wp_reset_query(); ?>
+
+                  <?php endwhile; 
+
+                  else: 
+                      echo '<p>No content found</p>';
+                  endif; ?></li>
         </ul>
-    </div>
-    <!-- End Carousel -->
-</div><!--.item-->
-                 
-<div class="menuthree">
+
+
+    </div><!-- End Carousel -->
+  </div>
+</div>
+</div>
+<!-- end of projects -->
+         <br>
+          <br>
+         <!--Clientes que confian en nosotros -->        
+<div class="menuthree2">
     <h1 >Empresas que Confían en Nosotros </h1>
     <p></p>
     
@@ -306,7 +441,51 @@ get_header();?>
                     
           </div><!-- item active -->
 </div><!--.item-->                
-     
+     <br>
+     <br>
+ <!--Ower Clients thoughts --> 
+ <div class="container-fluid">
+  <div class=" menuthree2">
+    <h1>Experiencias de Nuestros Clientes </h1>
+  </div>
+
+    <div class="container-fluid broun-block">
+          <?php
+if (have_posts()):
+  while (have_posts()) : the_post(); ?>
+
+  <?php if (is_page('inicio')) { ?>
+   
+
+  <?php query_posts(array(
+    'category_name'  => 'opinion1',
+    'posts_per_page' => 3
+)); while (have_posts()) : the_post(); ?>
+  <div class="col-md-4" id="">
+    <div class="block-text rel zmin">
+      <p class="titlelenght">"<?php the_content(); ?>"</p>
+      <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+  </div>
+  <div class="person-text rel">
+    <?php the_post_thumbnail('small-thumbnail');?>
+  <p class="titlelenght"><?php the_title(); ?></p><br>
+</div>
+
+  </div>
+  
+  <?php endwhile; ?>
+  
+  <?php wp_reset_query(); ?>
   
 
+    <?php }?>
+
+  <?php endwhile; 
+
+  else: 
+    echo '<p>No content found</p>';
+
+  endif; ?>
+    </div>
+</div>
 <?php get_footer();?>
