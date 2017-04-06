@@ -24,7 +24,7 @@ Text Domain: softdevrd
 }
 
 .multiclass{
-  margin-top: 100px;
+  margin-top: 110px;
 }
 body {
   font-family: 'Open sans';
@@ -204,7 +204,7 @@ Custom Styles
 .boxes{
   text-align: center;
   background: #fff;
-  margin-top: 100px; 
+  margin-top: 60px; 
 
 }
 
@@ -438,5 +438,4 @@ background: #428bca;
 .nav-pills>li[data-slide-to="1"].active a { background-color: #e67e22; }
 .nav-pills>li[data-slide-to="2"].active a { background-color: #2980b9; }
 .nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad; }
-
 

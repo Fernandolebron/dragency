@@ -13,7 +13,7 @@
 
 		add_theme_support('post-thumbnails');
 		add_image_size('small-thumbnail',  250, 250, true); 
-		add_image_size('banner-image', 1200, 400, true);
+		add_image_size('banner-image', 1200, 900, true);
 		add_image_size('banner-full', 1600, 800, true);
 	}
 
